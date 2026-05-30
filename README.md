@@ -1,9 +1,18 @@
-# CodexKey
+# ToKenMeUK
 
 > Codex 无限额度自动换号工具，支持 GPT-5.5、Image2 等 OpenAI 兼容模型。  
 > 面向 Codex 高频用户，主打 **无限使用、自动续杯、本地写入配置、启动 Codex APP**。
 
-![CodexKey 软件截图](assets/software-screenshot.svg)
+## ⭐ Star 收藏福利
+
+> **➕ 点 Star 收藏项目 + 加入 QQ 群，群内不定时送天卡。**  
+> 收藏后进群关注公告，后续更新、活动福利、使用支持都会优先同步。
+
+<p align="center">
+  <a href="https://qm.qq.com/q/9DRP6SMeeA"><strong>点我直达 QQ 群，领取天卡福利</strong></a>
+</p>
+
+![ToKenMeUK 软件截图](assets/software-screenshot.svg)
 
 ## 功能亮点
 
@@ -18,11 +27,11 @@
 
 ## 功能流程
 
-![CodexKey 功能流程](assets/workflow.png)
+![ToKenMeUK 功能流程](assets/workflow.png)
 
 ## 技术架构
 
-CodexKey 的核心思路是本地桥接：客户端负责卡密状态、设备标识、配置写入和 Codex 启动；服务端负责卡密校验、账号池调度和 OpenAI 兼容通道下发。
+ToKenMeUK 的核心思路是本地桥接：客户端负责卡密状态、设备标识、配置写入和 Codex 启动；服务端负责卡密校验、账号池调度和 OpenAI 兼容通道下发。
 
 ## 实现细节
 
@@ -69,11 +78,11 @@ Codex APP
 
 ## 获取与交流群
 
-欢迎点 Star 收藏项目，加群获取使用说明、更新通知和活动福利。
+欢迎点 Star 收藏项目，加群获取使用说明、更新通知和活动福利。**收藏 + 加群，群内不定时送天卡。**
 
 <p align="center">
   <a href="https://qm.qq.com/q/9DRP6SMeeA">
-    <img src="assets/qq-group.jpg" width="220" alt="CodexKey QQ 群二维码" />
+    <img src="assets/qq-group.jpg" width="220" alt="ToKenMeUK QQ 群二维码" />
   </a>
 </p>
 
@@ -81,8 +90,8 @@ Codex APP
   <a href="https://qm.qq.com/q/9DRP6SMeeA"><strong>点击直达 QQ 群</strong></a>
 </p>
 
-> 点收藏加群，群内不定时送天卡。
+> ⭐ **点 Star 收藏 + 加群，群内不定时送天卡。**
 
 ## 说明
 
-本仓库用于 CodexKey 项目展示、功能说明、更新记录和用户支持。请遵守 OpenAI、Codex 及相关服务的使用条款，合理使用账号与模型能力。
+本仓库用于 ToKenMeUK 项目展示、功能说明、更新记录和用户支持。请遵守 OpenAI、Codex 及相关服务的使用条款，合理使用账号与模型能力。
