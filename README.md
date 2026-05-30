@@ -3,7 +3,7 @@
 > Codex 无限额度自动换号工具，支持 GPT-5.5、Image2 等 OpenAI 兼容模型。  
 > 面向 Codex 高频用户，主打 **无限使用、自动续杯、本地写入配置、启动 Codex APP**。
 
-![CodexKey 软件截图](assets/software-screenshot.png)
+![CodexKey 软件截图](assets/software-screenshot.svg)
 
 ## 功能亮点
 
