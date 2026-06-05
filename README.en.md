@@ -1,10 +1,12 @@
 # CodexKey
 
+<p align="center">
+  <a href="README.md">中文</a> | <strong>EN</strong>
+</p>
+
 CodexKey is a local desktop enhancement tool for high-frequency Codex workflows. It supports card-key authorization, multi-card management, automatic account rotation, unlimited refill workflows, and OpenAI-compatible models. CodexKey writes the local Codex configuration and helps continue conversations when quota is exhausted by using one-click refill or automatic switching to another available card or account.
 
 > This repository is used only for product documentation, screenshots, release notes, and installer distribution. Client source code is not published here.
-
-Chinese documentation: [README.md](README.md)
 
 ## Highlights
 
