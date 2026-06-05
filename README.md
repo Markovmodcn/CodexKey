@@ -1,10 +1,12 @@
 # CodexKey
 
+<p align="center">
+  <strong>中文</strong> | <a href="README.en.md">EN</a>
+</p>
+
 CodexKey 是面向 Codex 高频使用场景的本地桌面增强工具，支持卡密授权、多卡管理、自动换号、无限续杯和 OpenAI 兼容模型接入。软件会自动写入 Codex 本地配置，并在额度耗尽时通过手动续杯或自动切换可用卡账号继续对话，减少重复配置和手动换号。
 
 > 本仓库仅用于产品说明、截图展示、版本发布和安装包分发。客户端源码不在此仓库公开。
-
-英文版说明：[README.en.md](README.en.md)
 
 ## 核心能力
 
