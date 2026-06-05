@@ -17,9 +17,9 @@ CodexKey 是面向 Codex 高频使用场景的本地桌面增强工具，提供�
 
 ### 下载
 
-- 最新版本：`v4.4.26`
+- 最新版本：`v4.4.27`
 - 更新页面：https://github.com/Markovmodcn/CodexKey/releases/latest
-- Windows 安装包：`Codexkey_4.4.26_x64-setup.exe`
+- Windows 安装包：`Codexkey_4.4.27_x64-setup.exe`
 
 ### 软件截图
 
@@ -68,9 +68,9 @@ CodexKey is a local desktop enhancement tool for high-frequency Codex workflows.
 
 ### Download
 
-- Latest version: `v4.4.26`
+- Latest version: `v4.4.27`
 - Update page: https://github.com/Markovmodcn/CodexKey/releases/latest
-- Windows installer: `Codexkey_4.4.26_x64-setup.exe`
+- Windows installer: `Codexkey_4.4.27_x64-setup.exe`
 
 ### Screenshot
 
