@@ -1,50 +1,52 @@
 # CodexKey
 
-CodexKey 是面向 Codex 高频用户的本地工具，支持卡密登录、多卡切换、额度用完自动续杯，并适配 GPT-5.5、Image2 等 OpenAI 兼容模型。
+CodexKey is a desktop bridge for Codex power users. It provides card-key authorization, multi-card management, automatic account rotation, unlimited refill workflows, and OpenAI-compatible model access for GPT-5.5, Image2, and similar models.
 
-> 本仓库只用于软件展示、安装包发布、更新说明和用户支持。客户端源码不在此仓库公开。
+CodexKey 是面向 Codex 高频使用场景的本地桌面增强工具。它通过稳定的本地配置写入、卡密授权和账号池调度，让用户在额度耗尽后快速续杯，并在多张卡之间自动切换可用额度，减少重复配置和手动换号。
 
-## 下载
+> This repository is used for product documentation, screenshots, release notes, and installer distribution. Client source code is intentionally not published here.
 
-- 最新版本：v4.4.26
-- 更新地址：https://github.com/Markovmodcn/CodexKey/releases/latest
-- 安装包：请在 GitHub Releases 中下载 `Codexkey_4.4.26_x64-setup.exe`
+## Highlights
 
-## 功能
+- **Unlimited refill workflow**: when the current quota is exhausted, CodexKey can continue the session through one-click refill or automatic card/account switching.
+- **Multi-card management**: one device can save multiple authorized cards, switch between cards, and display the current card status clearly.
+- **Automatic account rotation**: available direct accounts are scheduled from the account pool to keep Codex conversations moving.
+- **Local Codex configuration**: CodexKey writes the required local Codex configuration and launches the Codex desktop app after setup.
+- **OpenAI-compatible models**: supports GPT-5.5, Image2, and other OpenAI-compatible model endpoints provided by the service.
+- **Release-only public repository**: public GitHub releases are used for installer updates while the client source code remains private.
 
-- 卡密登录：输入卡密即可授权本机使用。
-- 多卡保存：一台设备可保存多张卡，点击卡片即可切换当前使用卡。
-- 自动续杯：当前卡额度用完后，可按设置自动切换可用卡继续对话。
-- 本地写入：一键写入 Codex 所需本地配置并拉起 Codex 桌面端。
-- 账号池状态：显示当前账号池剩余状态，方便判断可用额度。
-- 模型兼容：支持 GPT-5.5、Image2 等 OpenAI 兼容模型。
+## Download
 
-## 软件界面
+- Latest version: `v4.4.26`
+- Update page: https://github.com/Markovmodcn/CodexKey/releases/latest
+- Windows installer: `Codexkey_4.4.26_x64-setup.exe`
 
-![CodexKey 软件截图](assets/software-screenshot.svg)
+## Screenshot
 
-## 使用流程
+![CodexKey screenshot](assets/software-screenshot.svg)
 
-1. 安装并打开 CodexKey。
-2. 输入卡密登录，软件会自动保存本机卡密记录。
-3. 点击“一键续杯”，写入 Codex 本地配置。
-4. Codex 桌面端启动后即可继续对话。
-5. 当前卡额度用完时，可手动续杯或按设置自动切换其他卡。
+## Usage
 
-## 交流与支持
+1. Install and open CodexKey.
+2. Log in with a valid card key.
+3. Click one-click refill to write the local Codex configuration.
+4. Start or continue using the Codex desktop app.
+5. When quota is exhausted, use manual refill or automatic switching to continue with another available card/account.
 
-欢迎 Star 收藏项目，后续版本、活动福利和使用支持会优先同步到交流群。
+## Support
+
+Star this repository to follow release updates. For usage support and activity notices, join the QQ group below.
 
 <p align="center">
   <a href="https://qm.qq.com/q/9DRP6SMeeA">
-    <img src="assets/qq-group.jpg" width="220" alt="CodexKey QQ 群二维码" />
+    <img src="assets/qq-group.jpg" width="220" alt="CodexKey QQ group" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://qm.qq.com/q/9DRP6SMeeA"><strong>点击加入 QQ 群</strong></a>
+  <a href="https://qm.qq.com/q/9DRP6SMeeA"><strong>Join the QQ group</strong></a>
 </p>
 
-## 说明
+## Notice
 
-请合理使用账号与模型能力，遵守 OpenAI、Codex 及相关服务的使用条款。
+Use accounts and model capabilities responsibly. Follow the terms of OpenAI, Codex, and any related upstream services.
