@@ -12,7 +12,7 @@
 <p align="center">
   <a href="README.md">中文</a> ·
   <a href="https://www.token.me.uk/docs">Docs</a> ·
-  <a href="https://github.com/Markovmodcn/CodexKey/releases/latest">Latest download</a>
+  <a href="https://github.com/Markovmodcn/TokenMe/releases/latest">Latest download</a>
 </p>
 
 TokenMe is a local desktop assistant for AI development tools. Sign in with a card key, write compatible local configuration in one click, and keep working when quota is exhausted through refill and automatic account switching.
@@ -33,7 +33,7 @@ TokenMe is a local desktop assistant for AI development tools. Sign in with a ca
 ## Download
 
 - Latest version: `v4.4.30`
-- Release page: https://github.com/Markovmodcn/CodexKey/releases/latest
+- Release page: https://github.com/Markovmodcn/TokenMe/releases/latest
 - Windows installer: `releases/v4.4.30/TokenMe_4.4.30_x64-setup.exe`
 - Docs: https://www.token.me.uk/docs
 

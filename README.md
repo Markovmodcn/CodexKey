@@ -12,11 +12,11 @@
 <p align="center">
   <a href="README.en.md">EN</a> ·
   <a href="https://www.token.me.uk/docs">使用说明</a> ·
-  <a href="https://github.com/Markovmodcn/CodexKey/releases/latest">最新版下载</a>
+  <a href="https://github.com/Markovmodcn/TokenMe/releases/latest">最新版下载</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Markovmodcn/CodexKey/releases/latest">
+  <a href="https://github.com/Markovmodcn/TokenMe/releases/latest">
     <img alt="Latest" src="https://img.shields.io/badge/latest-v4.4.30-black?style=for-the-badge" />
   </a>
   <img alt="Windows" src="https://img.shields.io/badge/Windows-10%20%2F%2011-f5f5f7?style=for-the-badge&labelColor=111111&color=f5f5f7" />
@@ -40,7 +40,7 @@ TokenMe 是给 AI 开发工具准备的本地续杯助手。登录卡密后，�
 ## 下载
 
 - 最新版本：`v4.4.30`
-- 更新页面：https://github.com/Markovmodcn/CodexKey/releases/latest
+- 更新页面：https://github.com/Markovmodcn/TokenMe/releases/latest
 - Windows 安装包：`releases/v4.4.30/TokenMe_4.4.30_x64-setup.exe`
 - 使用说明：https://www.token.me.uk/docs
 
