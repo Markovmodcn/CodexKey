@@ -1,54 +1,63 @@
-# CodexKey
+# TokenMe
 
 <p align="center">
-  <strong>中文</strong> | <a href="README.en.md">EN</a>
+  <img src="assets/tokenme-logo.png" width="96" alt="TokenMe logo" />
 </p>
 
-CodexKey 是面向 Codex 高频使用场景的本地桌面增强工具，支持卡密授权、多卡管理、自动换号、无限续杯和 OpenAI 兼容模型接入。软件会自动写入 Codex 本地配置，并在额度耗尽时通过手动续杯或自动切换可用卡账号继续对话，减少重复配置和手动换号。
+<p align="center">
+  <strong>AI 续杯助手</strong><br />
+  Cursor / VS Code / Windsurf / Trae / Codex / cc-switch
+</p>
 
-> 本仓库仅用于产品说明、截图展示、版本发布和安装包分发。客户端源码不在此仓库公开。
+<p align="center">
+  <a href="README.en.md">EN</a> ·
+  <a href="https://www.token.me.uk/docs">使用说明</a> ·
+  <a href="https://github.com/Markovmodcn/CodexKey/releases/latest">最新版下载</a>
+</p>
 
-## 核心能力
+<p align="center">
+  <a href="https://github.com/Markovmodcn/CodexKey/releases/latest">
+    <img alt="Latest" src="https://img.shields.io/badge/latest-v4.4.30-black?style=for-the-badge" />
+  </a>
+  <img alt="Windows" src="https://img.shields.io/badge/Windows-10%20%2F%2011-f5f5f7?style=for-the-badge&labelColor=111111&color=f5f5f7" />
+</p>
 
-- **无限续杯流程**：当前额度用完后，可通过一键续杯或自动切换卡账号继续对话。
-- **多卡管理**：一台设备可保存多张授权卡，支持卡片切换和当前卡状态展示。
-- **自动换号**：从远程直连号池调度可用账号，减少额度耗尽后的手动处理。
-- **本地配置写入**：自动写入 Codex 所需配置，并拉起 Codex 桌面端。
-- **模型兼容**：支持 GPT-5.5、Image2 等 OpenAI 兼容模型。
-- **自动更新**：通过 GitHub Releases 分发安装包，新版客户端支持启动后自动下载安装器。
+TokenMe 是给 AI 开发工具准备的本地续杯助手。登录卡密后，一键写入兼容配置；额度耗尽时自动续杯、自动换号，让 Cursor、VS Code、Windsurf、Trae、Codex、cc-switch 等工具继续使用，不需要反复重装开发软件。
+
+![TokenMe 软件截图](assets/software-screenshot.png)
+
+## 核心体验
+
+- **无限续杯**：当前账号额度耗尽后，继续接入可用额度，减少中断。
+- **多工具支持**：支持 Cursor、VS Code、Windsurf、Trae、Codex、cc-switch 等 AI 开发工具。
+- **自动换号**：自动模式下检测到额度耗尽后，自动切换可用账号并重试。
+- **一键写入**：自动生成本地 OpenAI 兼容配置，开发工具按检测结果接入。
+- **软件内升级**：发现新版本后在软件内自动下载并启动安装器，不需要重新配置开发软件。
+- **兼容模型**：支持 GPT-5.5、Image2 等 OpenAI 兼容模型。
+
+![TokenMe 流程说明](assets/workflow.png)
 
 ## 下载
 
-- 最新版本：`v4.4.27`
+- 最新版本：`v4.4.30`
 - 更新页面：https://github.com/Markovmodcn/CodexKey/releases/latest
-- Windows 安装包：`Codexkey_4.4.27_x64-setup.exe`
+- Windows 安装包：`releases/v4.4.30/TokenMe_4.4.30_x64-setup.exe`
+- 使用说明：https://www.token.me.uk/docs
 
-## 软件截图
+## 关键词
 
-![CodexKey 软件截图](assets/software-screenshot.svg)
+TokenMe, CodexKey, Codex Key, Codex 续杯, Cursor 续杯, Windsurf 续杯, Trae 续杯, VS Code AI 续杯, cc-switch 导入, AI 续杯助手, AI 开发工具续杯, OpenAI 兼容模型, 自动换号, 无限续杯, 软件内自动升级。
 
-## 使用流程
-
-1. 安装并打开 CodexKey。
-2. 输入有效卡密并登录。
-3. 点击一键续杯，写入 Codex 本地配置并拉起 Codex。
-4. 额度用完后，选择手动续杯或自动切换其他可用卡账号继续对话。
-5. 如服务端要求升级，新版客户端会自动下载安装器并启动更新。
-
-## 支持与交流
+## 交流
 
 欢迎 Star 收藏项目。版本更新、使用支持和活动通知会同步到交流群。
 
 <p align="center">
   <a href="https://qm.qq.com/q/9DRP6SMeeA">
-    <img src="assets/qq-group.jpg" width="220" alt="CodexKey QQ 群二维码" />
+    <img src="assets/qq-group.jpg" width="220" alt="TokenMe QQ 群二维码" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://qm.qq.com/q/9DRP6SMeeA"><strong>加入 QQ 群</strong></a>
 </p>
-
-## 说明
-
-请合理使用账号与模型能力，遵守 OpenAI、Codex 及相关上游服务的使用条款。
