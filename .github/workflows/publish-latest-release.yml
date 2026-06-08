@@ -1,0 +1,97 @@
+name: Publish latest release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-latest-release.yml"
+      - "releases/v*/TokenMe_*_x64-setup.exe"
+      - "releases/v*/SHA256SUMS.txt"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version, for example v4.4.30. Defaults to the newest releases/v* folder."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Resolve release files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          version="${{ inputs.version }}"
+          if [[ -z "$version" ]]; then
+            installer="$(find releases -path "releases/v*/TokenMe_*_x64-setup.exe" -type f | sort -V | tail -n 1)"
+            if [[ -z "$installer" ]]; then
+              echo "No TokenMe installer found under releases/v*/." >&2
+              exit 1
+            fi
+            version="$(basename "$(dirname "$installer")")"
+          fi
+
+          version="${version#refs/tags/}"
+          if [[ "$version" != v* ]]; then
+            version="v$version"
+          fi
+
+          installer="releases/$version/TokenMe_${version#v}_x64-setup.exe"
+          sha_file="releases/$version/SHA256SUMS.txt"
+
+          test -f "$installer"
+          test -f "$sha_file"
+
+          {
+            echo "VERSION=$version"
+            echo "INSTALLER=$installer"
+            echo "SHA_FILE=$sha_file"
+            echo "TITLE=TokenMe $version"
+          } >> "$GITHUB_ENV"
+
+      - name: Write release notes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          sha_line="$(cat "$SHA_FILE")"
+          cat > release-notes.md <<EOF
+          TokenMe AI 续杯助手
+
+          - 面向 Codex、Cursor、Windsurf、Trae、VS Code AI 等 AI 开发工具。
+          - 支持 OpenAI 兼容模型、自动换号、cc-switch 导入与软件内自动升级。
+          - 文档：https://www.token.me.uk/docs
+
+          关键词：CodexKey、Codex Key、Codex 续杯、Cursor 续杯、Windsurf 续杯、Trae 续杯、VS Code AI 续杯、无限续杯、软件内自动升级。
+
+          SHA256:
+          $sha_line
+          EOF
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            gh release edit "$VERSION" --title "$TITLE" --notes-file release-notes.md
+          else
+            gh release create "$VERSION" --title "$TITLE" --notes-file release-notes.md
+          fi
+
+          gh release upload "$VERSION" "$INSTALLER" "$SHA_FILE" --clobber
+
+          release_id="$(gh release view "$VERSION" --json databaseId -q .databaseId)"
+          gh api -X PATCH "repos/${GITHUB_REPOSITORY}/releases/${release_id}" -f make_latest=true >/dev/null
